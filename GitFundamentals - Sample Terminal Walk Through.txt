@@ -1,0 +1,75 @@
+This is an example of registering files on Git Hub.  Use this for future reference.
+
+    Directory: C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da---l        11/30/2021  12:12 PM                assignments
+da---l        11/29/2021   3:43 PM                dotnetProjects
+da---l        11/30/2021   4:39 PM                firstRepository
+da---l         12/1/2021  11:33 AM                gitFundamentals
+da---l        11/29/2021   3:42 PM                htmlCssProjects
+da---l        11/29/2021   3:43 PM                javascriptProjects
+da---l         12/1/2021  10:04 AM                Screenshots
+da---l        11/30/2021   2:25 PM                TerminalDungeon
+-a---l        11/30/2021   4:30 PM            931 markdownNotes.md
+-a---l        11/30/2021  11:49 AM            412 terminalCommands.txt
+
+
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations> cd gitFundamentals
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git init
+Initialized empty Git repository in C:/Users/Ethan/OneDrive/Documents/ElevenFiftyAcademy/codingFoundations/gitFundamentals/.git/
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Add.md
+        Commit.md
+        Config.md
+        Create Init.md
+        Pull.md
+        Push.md
+        README.md
+        Remote.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git add README.md
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git add Add.md
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git add Commit.md
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git add Config.md
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git add Create.md
+fatal: pathspec 'Create.md' did not match any files
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git add CreateInit.md
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git add Pull.md
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git add push.md
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git add Remote.md
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git commit -m "Added multiple files -- README, Add, Commit, Config, CreateInit, Pull, Push, and Remote - I thought it might be more efficient this way instead of continuous commits... although I could be wrong"
+[master (root-commit) 702a707] Added multiple files -- README, Add, Commit, Config, CreateInit, Pull, Push, and Remote - I thought it might be more efficient this way instead of continuous commits... although I could be wrong
+ 7 files changed, 162 insertions(+)
+ create mode 100644 Add.md
+ create mode 100644 Commit.md
+ create mode 100644 Config.md
+ create mode 100644 CreateInit.md
+ create mode 100644 Pull.md
+ create mode 100644 README.md
+ create mode 100644 Remote.md
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git config --global user.email "ethan.hr@outlook.com"
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git config --global user.name "ApexHC"
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git branch -M main
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git remote add origin https://github.com/ApexHC/gitFundamentals.git
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals> git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 3.25 KiB | 3.25 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ApexHC/gitFundamentals.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+PS C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\gitFundamentals>
+

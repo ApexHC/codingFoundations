@@ -1,0 +1,11 @@
+Terminal Commands Cheat Sheet
+
+ls - lists contents of THIS directory (powershell and terminal)
+cd - changes directory (enter cd directoryName)
+cd .. - goes up one level on the directory (.. is means the folder above)
+mi - move item (moves an item)
+get-help - gets you a list of help items (you would enter it like this  C:/> get-help Get-Command)
+
+
+COMMANDLETS
+Get-Command - shows all get COMMANDLETS

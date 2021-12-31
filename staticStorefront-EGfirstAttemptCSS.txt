@@ -1,0 +1,51 @@
+:root {
+    --primary-color: blue;
+    --secondary-color: #00B9F2;
+}
+
+body {
+    background: whitesmoke;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.nav {
+    background: green;
+    padding: 1em;
+    position: fixed;
+    width: 5rem;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: white
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+span {
+    color: var(--secondary-color);
+}
+
+.primary-nav {
+    display: none;
+}

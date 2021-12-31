@@ -1,0 +1,1 @@
+ry.Make+ " " + inventory.Model);

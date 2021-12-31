@@ -1,0 +1,5 @@
+C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\EthanCSharpPractice\FirstPractice\obj\Debug\net6.0\FirstPractice.csproj.AssemblyReference.cache
+C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\EthanCSharpPractice\FirstPractice\obj\Debug\net6.0\FirstPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\EthanCSharpPractice\FirstPractice\obj\Debug\net6.0\FirstPractice.AssemblyInfoInputs.cache
+C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\EthanCSharpPractice\FirstPractice\obj\Debug\net6.0\FirstPractice.AssemblyInfo.cs
+C:\Users\Ethan\OneDrive\Documents\ElevenFiftyAcademy\codingFoundations\EthanCSharpPractice\FirstPractice\obj\Debug\net6.0\FirstPractice.csproj.CoreCompileInputs.cache

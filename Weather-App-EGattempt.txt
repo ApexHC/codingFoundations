@@ -1,0 +1,74 @@
+/* WEATHER APP NOTES
+
+THIS IS THE CODE I WROTE - WITH ERRORS
+
+STEP 1
+The user will press a button to get their weather data
+When pressed, the button will get the browsers geolocation data.
+
+STEP 2
+Take the latitude and longitude, and fetch the weather data with it.
+
+STEP 3
+Display the weather data in the document
+
+Using open-meteo.com
+
+url for the API is:  https://api.open-meteo.com/v1/forecast
+
+*/
+
+const baseURL = "https://api.open-meteo.com/v1/forecast"
+    //Get the button that the user will interact with
+let buttonElement = document.getElementById('geolocation-weather');
+//Grab area where the results will be displayed
+let resultsElement = document.getElementById('results');
+
+function displayWeatherData(temperature, windSpeed) {
+    // Clear previous results
+    resultsElement.innerHTML = '';
+    let temperatureElement = document.createElement('p');
+    let windSpeedElement = document.createElement('p');
+
+    temperatureElement.innerText = temperature;
+    windSpeedElement.innerText = windSpeed;
+
+    resultsElement.appendChild(temperatureElement);
+    resultsElement.appendChild(windSpeedElement);
+}
+
+function fetchWeather(latitude, longitude) {
+    let url = `&{ baseURL }?latitude=${ latitude }&longitude=${ longitude }&current_weather=true&temperature_unit=fahrenheit`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(jsonData => {
+            console.log(jsonData);
+            let temperature = jsonData.current_weather.temperature;
+            let windSpeed = jsonData.current_weather.windSpeed;
+
+            displayWeatherData(temperature, windSpeed);
+        })
+}
+
+// Now that we have the button and results - test it out.  tested in liveserver (under the console tab)  when you press the button, it counts the presses.  
+
+function retrieveGeolocationData() {
+    navigator.geolocation.getCurrentPosition(result => {
+        console.log(result);
+        // Object destructuring.
+        // let{ latitude = result.coords.latitude;} -- this is the longer way of doing the line below.
+        let { latitude, longitude } = result.coords;
+        console.log(latitude);
+        console.log(longitude);
+
+        fetchWeather(latitude, longitude);
+    });
+}
+buttonElement.addEventListener('click', () => {
+    console.log('testing');
+    retrieveGeolocationData() //this hooked the function above into the button element
+});
+
+
+// AT THIS POINT WE HAVE CRAFTED OUR QUERY
